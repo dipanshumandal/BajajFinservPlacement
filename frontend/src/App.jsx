@@ -24,7 +24,7 @@ function App() {
     try {
       const parsedInput = JSON.parse(jsonInput);
       const response = await axios.post(
-        "http://localhost:3000/bfhl",
+        "https://bajajfinservplacement.onrender.com/bfhl",
         parsedInput
       );
       setResponseData(response.data);
